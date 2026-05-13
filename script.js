@@ -151,3 +151,13 @@ function analyzeStock() {
   } else {
     analysis += "✅ Kritik seviyede stok bulunmuyor.\n";
   }
+
+
+  if (topSeller && topSeller.sold > 0) {
+    analysis += `🏆 En çok satan ürün: ${topSeller.name}\n`;
+  }
+
+  analysis += "\nÖneri:\nStok seviyesi düşük ürünler için yeniden sipariş planlaması yap.";
+
+  aiText.innerText = analysis;
+}
