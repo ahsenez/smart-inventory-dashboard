@@ -27,5 +27,3 @@ This project helps small businesses manage inventory operations, monitor sales p
 - User login system
 - Database integration
 
-## Live Demo
-Render link will be added here.
