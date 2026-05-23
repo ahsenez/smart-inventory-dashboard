@@ -1,1 +1,70 @@
 <!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Inventory Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+  <header>
+    <h1>📦 Smart Inventory Dashboard</h1>
+    <p>Küçük işletmeler için stok ve satış yönetimi</p>
+  </header>
+
+  <div class="summary">
+    <div class="box">
+      <h3>Toplam Ürün</h3>
+      <p id="totalProducts">0</p>
+    </div>
+
+    <div class="box">
+      <h3>Toplam Gelir</h3>
+      <p id="totalRevenue">0₺</p>
+    </div>
+
+    <div class="box">
+      <h3>Düşük Stok</h3>
+      <p id="lowStock">0</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Ürün Ekle</h2>
+
+    <input type="text" id="productName" placeholder="Ürün adı">
+    <input type="number" id="productStock" placeholder="Stok adedi">
+    <input type="number" id="productPrice" placeholder="Ürün fiyatı">
+
+    <button onclick="addProduct()">Ürün Ekle</button>
+  </div>
+
+  <div class="card">
+    <h2>Ürün Listesi</h2>
+    <div id="productList">
+      <p>Henüz ürün yok.</p>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Satış Yap</h2>
+
+    <select id="saleProduct"></select>
+    <input type="number" id="saleQuantity" placeholder="Satış adedi">
+
+    <button onclick="makeSale()">Satış Kaydet</button>
+  </div>
+
+  <div class="card">
+    <h2>AI Stok Analizi</h2>
+    <p id="aiText">Henüz analiz yapılmadı.</p>
+
+    <button onclick="analyzeStock()">Analiz Et</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
