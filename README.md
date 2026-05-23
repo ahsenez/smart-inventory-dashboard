@@ -25,5 +25,4 @@ This project helps small businesses manage inventory operations, monitor sales p
 - Product category filtering
 - Sales charts
 - User login system
-- Database integration
-
+- Database integrati
