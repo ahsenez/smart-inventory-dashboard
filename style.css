@@ -18,3 +18,9 @@ header {
 header p {
   color: #cbd5e1;
 }
+
+.summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 16px;
+}
