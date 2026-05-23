@@ -14,9 +14,21 @@ body {
 header {
   margin-bottom: 25px;
 }
-
+.box,
+.card {
+  background: #1e293b;
+  border-radius: 16px;
+  padding: 20px;
+  margin-top: 20px;
+}
 header p {
-  color: #cbd5e1;
+  color: #cbd5e1;.box,
+.card {
+  background: #1e293b;
+  border-radius: 16px;
+  padding: 20px;
+  margin-top: 20px;
+}
 }
 
 .summary {
