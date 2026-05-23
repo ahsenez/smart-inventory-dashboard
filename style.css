@@ -14,21 +14,9 @@ body {
 header {
   margin-bottom: 25px;
 }
-.box,
-.card {
-  background: #1e293b;
-  border-radius: 16px;
-  padding: 20px;
-  margin-top: 20px;
-}
+
 header p {
-  color: #cbd5e1;.box,
-.card {
-  background: #1e293b;
-  border-radius: 16px;
-  padding: 20px;
-  margin-top: 20px;
-}
+  color: #cbd5e1;
 }
 
 .summary {
@@ -43,4 +31,50 @@ header p {
   border-radius: 16px;
   padding: 20px;
   margin-top: 20px;
+}
+
+.box h3 {
+  color: #94a3b8;
+  margin: 0;
+}
+
+.box p {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+input,
+select,
+button {
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 12px;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  font-size: 15px;
+}
+
+button {
+  background: #22c55e;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #16a34a;
+}
+
+.product-item {
+  background: #334155;
+  padding: 14px;
+  border-radius: 12px;
+  margin-top: 10px;
+}
+
+.low {
+  color: #f87171;
+  font-weight: bold;
 }
