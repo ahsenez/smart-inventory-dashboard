@@ -11,3 +11,10 @@ body {
   padding: 30px 20px;
 }
 
+header {
+  margin-bottom: 25px;
+}
+
+header p {
+  color: #cbd5e1;
+}
