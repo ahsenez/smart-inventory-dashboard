@@ -25,4 +25,10 @@ header p {
   gap: 16px;
 }
 
-
+.box,
+.card {
+  background: #1e293b;
+  border-radius: 16px;
+  padding: 20px;
+  margin-top: 20px;
+}
