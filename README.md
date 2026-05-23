@@ -17,3 +17,15 @@ AI-powered inventory and sales tracking dashboard designed for small businesses.
 - JavaScript
 - LocalStorage
 - Render
+
+## Project Purpose
+This project helps small businesses manage inventory operations, monitor sales performance, and make smarter stock decisions.
+
+## Future Improvements
+- Product category filtering
+- Sales charts
+- User login system
+- Database integration
+
+## Live Demo
+Render link will be added here.
