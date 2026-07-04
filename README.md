@@ -1,28 +1,44 @@
 # Smart Inventory Dashboard
 
-AI-powered inventory and sales tracking dashboard designed for small businesses.
+An AI-powered inventory and sales management dashboard designed for SMEs.
+
+## Live Demo
+
+https://....
+
+## Screenshots
+
+(images)
 
 ## Features
-- Add products
-- Track stock quantity
-- Record sales
-- Calculate total revenue
-- Detect low stock products
-- AI-based stock analysis
-- Dashboard summary cards
 
-## Technologies Used
-- HTML
-- CSS
+- AI Sales Prediction
+- Inventory Management
+- Product Analytics
+- Employee Performance
+- Revenue Reports
+- Customer Insights
+- Responsive Design
+
+## Tech Stack
+
+- HTML5
+- CSS3
 - JavaScript
+- Chart.js
 - LocalStorage
-- Render
 
-## Project Purpose
-This project helps small businesses manage inventory operations, monitor sales performance, and make smarter stock decisions.
+## Installation
+
+git clone ...
 
 ## Future Improvements
-- Product category filtering
-- Sales charts
-- User login system
-- Database integration
+
+- Login System
+- Database
+- AI Chat Assistant
+- PDF Reports
+
+## License
+
+MIT
