@@ -4,7 +4,7 @@ An AI-powered inventory and sales management dashboard designed for SMEs.
 
 ## Live Demo
 
-https://....
+https://smart-inventory-dashboard-1-gqvm.onrender.com/
 
 ## Screenshots
 
