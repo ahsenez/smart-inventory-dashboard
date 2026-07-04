@@ -8,7 +8,9 @@ https://smart-inventory-dashboard-1-gqvm.onrender.com/
 
 ## Screenshots
 
-(images)
+<img width="1502" height="956" alt="smartınventory" src="https://github.com/user-attachments/assets/78cca259-bab8-4437-aae3-2364cef5ae1a" />
+
+
 
 ## Features
 
