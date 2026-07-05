@@ -95,3 +95,13 @@ button:hover {
     border-color:#2563eb;
     box-shadow:0 0 5px rgba(37,99,235,.3);
 }
+
+.button-group{
+    margin-top:12px;
+    display:flex;
+    gap:10px;
+}
+
+.button-group button{
+    flex:1;
+}
