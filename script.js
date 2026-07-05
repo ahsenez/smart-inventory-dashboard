@@ -161,3 +161,24 @@ function analyzeStock() {
 
   aiText.innerText = analysis;
 }
+
+function searchProducts(){
+
+    const keyword=document
+        .getElementById("searchProduct")
+        .value
+        .toLowerCase();
+
+    const items=document.querySelectorAll(".product-item");
+
+    items.forEach(item=>{
+
+        if(item.innerText.toLowerCase().includes(keyword)){
+            item.style.display="block";
+        }else{
+            item.style.display="none";
+        }
+
+    });
+
+}
