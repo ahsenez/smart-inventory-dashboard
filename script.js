@@ -58,14 +58,18 @@ function renderProducts() {
         ? '<span class="low">⚠ Düşük stok</span>'
         : "";
 
-    div.innerHTML = `
-      <strong>${product.name}</strong><br>
-      Stok: ${product.stock} adet<br>
-      Fiyat: ${product.price}₺<br>
-      Satılan: ${product.sold} adet<br>
-      ${lowStockText}
-      <button onclick="deleteProduct(${index})">Ürünü Sil</button>
-    `;
+div.innerHTML = `
+  <strong>${product.name}</strong><br>
+  📦 Stok: ${product.stock} adet<br>
+  💰 Fiyat: ${product.price}₺<br>
+  🛒 Satılan: ${product.sold} adet<br>
+  ${lowStockText}
+
+  <div class="button-group">
+    <button onclick="editProduct(${index})">✏️ Düzenle</button>
+    <button onclick="deleteProduct(${index})">🗑 Sil</button>
+  </div>
+`;
 
     list.appendChild(div);
   });
@@ -180,5 +184,17 @@ function searchProducts(){
         }
 
     });
+
+}
+
+function editProduct(index){
+
+    const product = products[index];
+
+    document.getElementById("productName").value = product.name;
+    document.getElementById("productStock").value = product.stock;
+    document.getElementById("productPrice").value = product.price;
+
+    deleteProduct(index);
 
 }
