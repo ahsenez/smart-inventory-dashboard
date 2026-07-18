@@ -30,9 +30,7 @@ https://smart-inventory-dashboard-1-gqvm.onrender.com/
 - Chart.js
 - LocalStorage
 
-## Installation
 
-git clone ...
 
 ## Future Improvements
 
