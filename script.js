@@ -30,6 +30,13 @@ function saveData() {
   localStorage.setItem("totalRevenue", totalRevenue);
 }
 
+function refreshUI() {
+  saveData();
+  renderProducts();
+  updateSummary();
+  updateSaleOptions();
+}
+
 function addProduct() {
   const name = document.getElementById("productName").value.trim();
   const stock = Number(document.getElementById("productStock").value);
@@ -47,10 +54,7 @@ function addProduct() {
     sold: 0
   });
 
-  saveData();
-  renderProducts();
-  updateSummary();
-  updateSaleOptions();
+  refreshUI();
 
   document.getElementById("productName").value = "";
   document.getElementById("productStock").value = "";
@@ -95,10 +99,7 @@ div.innerHTML = `
 
 function deleteProduct(index) {
   products.splice(index, 1);
-  saveData();
-  renderProducts();
-  updateSummary();
-  updateSaleOptions();
+  refreshUI();
 }
 
 function updateSaleOptions() {
@@ -138,10 +139,7 @@ function makeSale() {
   product.sold += quantity;
   totalRevenue += quantity * product.price;
 
-  saveData();
-  renderProducts();
-  updateSummary();
-  updateSaleOptions();
+  refreshUI();
 
   document.getElementById("saleQuantity").value = "";
 }
