@@ -2,27 +2,9 @@ let products = JSON.parse(localStorage.getItem("products")) || [];
 let totalRevenue = Number(localStorage.getItem("totalRevenue")) || 0;
 
 document.addEventListener("DOMContentLoaded", () => {
-
-  document
-    .getElementById("addProductBtn")
-    .addEventListener("click", addProduct);
-
-  document
-    .getElementById("saleBtn")
-    .addEventListener("click", makeSale);
-
-  document
-    .getElementById("analyzeBtn")
-    .addEventListener("click", analyzeStock);
-
-  document
-    .getElementById("searchInput")
-    .addEventListener("input", searchProducts);
-
   renderProducts();
   updateSummary();
   updateSaleOptions();
-
 });
 
 function saveData() {
@@ -30,7 +12,7 @@ function saveData() {
   localStorage.setItem("totalRevenue", totalRevenue);
 }
 
-function refreshUI() {
+function refreshUI(){
   saveData();
   renderProducts();
   updateSummary();
@@ -214,3 +196,4 @@ function editProduct(index){
     deleteProduct(index);
 
 }
+
